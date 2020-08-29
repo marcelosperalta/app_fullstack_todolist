@@ -1,4 +1,4 @@
-# To-do App
+# :white_check_mark: To-do App
 
 A To-do App with MongoDB, Express, React, Node.js and TypeScript.
 
