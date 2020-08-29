@@ -1,3 +1,9 @@
+<div align="center">
+<img height="100" src="./readme/img_mern.png"/>
+&nbsp;&nbsp;&nbsp;&nbsp;
+<img height="100" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/typescript/typescript.png"/>
+</div>
+
 # :white_check_mark: To-do App
 
 A To-do App with MongoDB, Express, React, Node.js and TypeScript.
