@@ -1,3 +1,3 @@
 git add .
-git commit -m "todolist react update"
+git commit -m "typescript study"
 git push
