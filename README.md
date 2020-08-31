@@ -162,7 +162,7 @@ export default model<ITodo>("Todo", todoSchema)
 ### :hash::zero::three: Create API controllers
 **Get, Add, Update and Delete Todos**
 
-:open_file_folder: [src/controllers/todos/index.ts](https://github.com/marcelosperalta/todoApp_react/blob/master/src/models/todo.ts)
+:open_file_folder: [src/controllers/todos/index.ts](https://github.com/marcelosperalta/todoApp_react/blob/master/src/controllers/todos/index.ts)
 
 ```
 import { Response, Request } from "express"
