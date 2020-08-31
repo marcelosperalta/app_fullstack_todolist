@@ -97,7 +97,7 @@ yarn add -D @types/node @types/express @types/mongoose @types/cors
 
 
 ```
-  yarn add -D concurrently nodemon
+yarn add -D concurrently nodemon
 ```
 
 :heavy_exclamation_mark: update the package.json
