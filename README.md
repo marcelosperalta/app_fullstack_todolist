@@ -96,7 +96,7 @@ yarn add express cors mongoose
 yarn add -D @types/node @types/express @types/mongoose @types/cors
 ```
 
-![package.json](./screenshot03.png)
+![package.json](./img_screenshot04.png)
 
 ### :dvd: Install the dependencies [Concurrently](https://github.com/kimmobrunfeldt/concurrently#readme), and [nodemon](https://nodemon.io/)  
 
@@ -116,7 +116,7 @@ yarn add -D concurrently nodemon
 }
 ```
 
-![package.json](./screenshot04.png)
+![package.json](./img_screenshot05.png)
 
 ### :hash::zero::one: Create a Todo Type
 
@@ -283,7 +283,7 @@ export default router
 
 :rotating_light: add the ```nodemon.json``` to your [.gitignore](https://git-scm.com/docs/gitignore) file to protect your DB access data.
 
-![nodemon.json](./screenshot05.png)
+![nodemon.json](./img_screenshot06.png)
 
 :loudspeaker: you can get the credentials by [MongoDB Atlas](https://www.mongodb.com/cloud/atlas)
 
