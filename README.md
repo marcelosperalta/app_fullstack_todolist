@@ -85,7 +85,7 @@ yarn add express cors mongoose
 
 :heavy_exclamation_mark: install their types as development dependencies to help the TypeScript compiler understand the packages.
 
-:loudspeaker: see type declarations
+:loudspeaker: see _[type declarations](https://www.typescriptlang.org/docs/handbook/declaration-files/consumption.html)_
 
 ```
 yarn add -D @types/node @types/express @types/mongoose @types/cors
