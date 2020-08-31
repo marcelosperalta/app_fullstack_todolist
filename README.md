@@ -15,6 +15,26 @@ A To-do App with MongoDB, Express, React, Node.js, and TypeScript.
 ### :dvd: Getting started
 
 ```
-yarn init
+yarn init -y
 ```
 
+### :heavy_minus_sign: Structure of the project
+
+```
+├── dist
+├── node_modules
+├── src
+   ├── app.ts
+   ├── controllers
+   |  └── todos
+   |     └── index.ts
+   ├── models
+   |  └── todo.ts
+   ├── routes
+   |  └── index.ts
+   └── types
+      └── todo.ts
+├── nodemon.json
+├── package.json
+├── tsconfig.json
+```

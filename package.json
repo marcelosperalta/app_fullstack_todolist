@@ -1,0 +1,8 @@
+{
+  "name": "todoApp_react",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/marcelosperalta/todoApp_react",
+  "author": "marcelosperalta <marcelosperalta@gmail.com>",
+  "license": "MIT"
+}
