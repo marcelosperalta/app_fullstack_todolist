@@ -63,3 +63,5 @@ Delete the tsconfig.json's original settings and paste the text below:
 }
 ```
 
+![tsconfig.json](./readme/screenshot02.png)
+
