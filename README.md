@@ -266,7 +266,7 @@ export default router
 
 ### :hash::zero::five:: Create a Server  
 
-** Create a ```nodemon.json``` file to hold the MongoDB credentials
+Create a ```nodemon.json``` file to hold the MongoDB credentials.
 
 ```
 {
