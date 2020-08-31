@@ -120,7 +120,7 @@ yarn add -D concurrently nodemon
 
 ### :hash::zero::one: Create a Todo Type
 
-:open_file_folder: [src/types/todo.ts](https://github.com/marcelosperalta/todoApp_react/blob/master/src/types/todo.ts)
+:open_file_folder: [server/src/types/todo.ts](https://github.com/marcelosperalta/todoApp_react/blob/master/server/src/types/todo.ts)
 
 ```
 import { Document } from "mongoose"
@@ -134,7 +134,7 @@ export interface ITodo extends Document {
 
 ### :hash::zero::two: Create a Todo Model
 
-:open_file_folder: [src/models/todo.ts](https://github.com/marcelosperalta/todoApp_react/blob/master/src/models/todo.ts)
+:open_file_folder: [src/models/todo.ts](https://github.com/marcelosperalta/todoApp_react/blob/master/server/src/models/todo.ts)
 
 ```
 import { ITodo } from "./../types/todo"
@@ -165,7 +165,7 @@ export default model<ITodo>("Todo", todoSchema)
 ### :hash::zero::three: Create API controllers
 **Get, Add, Update and Delete Todos**
 
-:open_file_folder: [src/controllers/todos/index.ts](https://github.com/marcelosperalta/todoApp_react/blob/master/src/controllers/todos/index.ts)
+:open_file_folder: [src/controllers/todos/index.ts](https://github.com/marcelosperalta/todoApp_react/blob/master/server/src/controllers/todos/index.ts)
 
 ```
 import { Response, Request } from "express"
@@ -248,7 +248,7 @@ export { getTodos, addTodo, updateTodo, deleteTodo }
 
 ### :hash::zero::four: Create API routes
 
-:open_file_folder: [src/routes/index.ts](https://github.com/marcelosperalta/todoApp_react/blob/master/src/routes/index.ts)
+:open_file_folder: [src/routes/index.ts](https://github.com/marcelosperalta/todoApp_react/blob/master/server/src/routes/index.ts)
 
 ```
 import { Router } from "express"
@@ -289,7 +289,7 @@ export default router
 
 :page_with_curl: Create a ```app.ts``` file.
 
-:open_file_folder: [src/app.ts](https://github.com/marcelosperalta/todoApp_react/blob/master/src/app.ts)
+:open_file_folder: [src/app.ts](https://github.com/marcelosperalta/todoApp_react/blob/master/server/src/app.ts)
 
 ## :computer: **Client-side** with React and TypeScript
 
