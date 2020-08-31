@@ -45,7 +45,7 @@ yarn init -y
 tsc --init
 ```
 
-Delete the tsconfig.json's original settings and paste the text below:
+Delete the ```tsconfig.json``` original settings and paste the text below:
 
 ```
 {
