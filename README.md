@@ -247,3 +247,35 @@ export { getTodos, addTodo, updateTodo, deleteTodo }
 
 :open_file_folder: [src/routes/index.ts](https://github.com/marcelosperalta/todoApp_react/blob/master/src/routes/index.ts)
 
+```
+import { Router } from "express"
+import { getTodos, addTodo, updateTodo, deleteTodo } from "../controllers/todos"
+
+const router: Router = Router()
+
+router.get("/todos", getTodos)
+
+router.post("/add-todo", addTodo)
+
+router.put("/edit-todo/:id", updateTodo)
+
+router.delete("/delete-todo/:id", deleteTodo)
+
+export default router
+```
+
+### :hash::zero::five:: Create a Server  
+
+** Create a ```nodemon.json``` file to hold the MongoDB credentials
+
+```
+{
+    "env": {
+        "MONGO_USER": "your-username",
+        "MONGO_PASSWORD": "your-password",
+        "MONGO_DB": "your-db-name"
+    }
+}
+```
+
+:rotating_light: add the ```nodemon.json``` to your [.gitignore](https://git-scm.com/docs/gitignore) file to protect your DB access data.
