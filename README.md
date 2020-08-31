@@ -12,7 +12,7 @@ A To-do App with [MongoDB](https://www.mongodb.com/), [Express](https://expressj
 
 [How to Build a Todo App with React, TypeScript, NodeJS, and MongoDB](https://www.freecodecamp.org/news/how-to-build-a-todo-app-with-react-typescript-nodejs-and-mongodb/) by [Ibrahima Ndaw](https://github.com/ibrahima92) on [freeCodeCamp.org](https://www.freecodecamp.org/)
 
-## :fire: Getting Started
+## :cloud: Getting Started **Server-side**
 
 ### :dvd: Generate the ```tsconfig.json```
 
@@ -23,23 +23,26 @@ yarn init -y
 ### :heavy_minus_sign: Structure of the project
 
 ```
-├── dist
-├── node_modules
-├── src
-   ├── app.ts
-   ├── controllers
-   |  └── todos
-   |     └── index.ts
-   ├── models
-   |  └── todo.ts
-   ├── routes
-   |  └── index.ts
-   └── types
-      └── todo.ts
-├── nodemon.json
-├── package.json
-├── tsconfig.json
+├── server
+    ├── dist
+    ├── node_modules
+    ├── src
+        ├── controllers
+        |  └── todos
+        |     └── index.ts
+        ├── models
+        |  └── todo.ts
+        ├── routes
+        |  └── index.ts
+        └── types
+           └── todo.ts
+        ├── app.ts
+    ├── nodemon.json
+    ├── package.json
+    ├── tsconfig.json
 ```
+
+![server structure](./img_screenshot02.png)
 
 ### ⚙ Configuring TypeScript with [tsconfig](https://www.typescriptlang.org/docs/handbook/tsconfig-json.html) using [tsc](https://www.typescriptlang.org/docs/handbook/release-notes/typescript-1-6.html#--init-command-line-option)
 
@@ -71,7 +74,7 @@ Delete the ```tsconfig.json``` original settings and paste the text below:
 :black_small_square: ```include:``` tells the compiler to include files that are in the src directory and sub-directory.  
 :black_small_square: ```exclude:``` will exclude the files or folders passed in the array during compile-time.  
 
-![tsconfig.json](./readme/screenshot02.png)
+![tsconfig.json](./img_screenshot03.png)
 
 ### :dvd: Install the dependencies to enable [TypeScript](https://www.typescriptlang.org/)  
 
@@ -93,7 +96,7 @@ yarn add express cors mongoose
 yarn add -D @types/node @types/express @types/mongoose @types/cors
 ```
 
-![package.json](./readme/screenshot03.png)
+![package.json](./screenshot03.png)
 
 ### :dvd: Install the dependencies [Concurrently](https://github.com/kimmobrunfeldt/concurrently#readme), and [nodemon](https://nodemon.io/)  
 
@@ -113,7 +116,7 @@ yarn add -D concurrently nodemon
 }
 ```
 
-![package.json](./readme/screenshot04.png)
+![package.json](./screenshot04.png)
 
 ### :hash::zero::one: Create a Todo Type
 
@@ -280,7 +283,7 @@ export default router
 
 :rotating_light: add the ```nodemon.json``` to your [.gitignore](https://git-scm.com/docs/gitignore) file to protect your DB access data.
 
-![nodemon.json](./readme/screenshot05.png)
+![nodemon.json](./screenshot05.png)
 
 :loudspeaker: you can get the credentials by [MongoDB Atlas](https://www.mongodb.com/cloud/atlas)
 
@@ -288,7 +291,7 @@ export default router
 
 :open_file_folder: [src/app.ts](https://github.com/marcelosperalta/todoApp_react/blob/master/src/app.ts)
 
-### :hash::zero::six: Client-side with React and TypeScript
+## :computer: **Client-side** with React and TypeScript
 
 #### ⚙ Setting up
 
@@ -301,5 +304,5 @@ npx create-react-app my-app --template typescript
 :black_small_square: Install the [Axios](https://github.com/axios/axios#axios) library to be able to fetch remote data.
 
 ```
-
+yarn add axios
 ```
