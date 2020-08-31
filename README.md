@@ -169,6 +169,7 @@ import { Response, Request } from "express"
 import { ITodo } from "./../../types/todo"
 import Todo from "../../models/todo"
 
+// GET
 const getTodos = async (req: Request, res: Response): Promise<void> => {
   try {
     const todos: ITodo[] = await Todo.find()
@@ -178,6 +179,7 @@ const getTodos = async (req: Request, res: Response): Promise<void> => {
   }
 }
 
+// POST
 const addTodo = async (req: Request, res: Response): Promise<void> => {
   try {
     const body = req.body as Pick<ITodo, "name" | "description" | "status">
@@ -199,6 +201,7 @@ const addTodo = async (req: Request, res: Response): Promise<void> => {
   }
 }
 
+// PUT
 const updateTodo = async (req: Request, res: Response): Promise<void> => {
   try {
     const {
@@ -220,6 +223,7 @@ const updateTodo = async (req: Request, res: Response): Promise<void> => {
   }
 }
 
+// DELETE
 const deleteTodo = async (req: Request, res: Response): Promise<void> => {
   try {
     const deletedTodo: ITodo | null = await Todo.findByIdAndRemove(
@@ -241,4 +245,5 @@ export { getTodos, addTodo, updateTodo, deleteTodo }
 
 ### :hash::zero::four:: Create API routes
 
-:open_file_folder: [src/controllers/todos/index.ts](https://github.com/marcelosperalta/todoApp_react/blob/master/src/models/todo.ts)
+:open_file_folder: [src/routes/index.ts](https://github.com/marcelosperalta/todoApp_react/blob/master/src/routes/index.ts)
+

@@ -2,6 +2,7 @@ import { Response, Request } from "express"
 import { ITodo } from "./../../types/todo"
 import Todo from "../../models/todo"
 
+// GET
 // To fetch data. It receives a req and res parameter and returns a promise.
 // With the help of the Todo model created earlier, 
 // we can now get data from MongoDB and return a response with the array of todos.
@@ -14,6 +15,7 @@ const getTodos = async (req: Request, res: Response): Promise<void> => {
     }
 }
 
+// POST
 // To receive the body object that contains data entered by the user.
 const addTodo = async (req: Request, res: Response): Promise<void> => {
     try {
@@ -36,6 +38,7 @@ const addTodo = async (req: Request, res: Response): Promise<void> => {
     }
   }
 
+// PUT
 // Using typecasting to avoid typos and restrict the body variable 
 // to match ITodo and then create a new Todo based on the model.
 // We can now save the Todo in the DB and return a response 
@@ -61,6 +64,7 @@ const updateTodo = async (req: Request, res: Response): Promise<void> => {
     }
   }
 
+// DELETE
 // Allows you to delete a Todo from the database. 
 // Here, we pull out the id from req and pass it as an argument to findByIdAndRemove()
 // to access the corresponding Todo and delete it from the DB.
