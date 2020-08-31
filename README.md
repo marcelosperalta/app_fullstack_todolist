@@ -299,7 +299,7 @@ export default router
 
 :rotating_light: the ```client``` folder needs to be at the same level of the ```server``` folder.
 
-![nodemon.json](./img_screenshot07.png)
+![client folder](./img_screenshot07.png)
 
 ```
 npx create-react-app client --template typescript
@@ -316,3 +316,29 @@ cd client
 ```
 yarn add axios
 ```
+
+### :heavy_minus_sign: Structure of the project
+
+```
+├── client
+    ├── node_modules
+    ├── public
+    ├── src
+    |   ├── components
+    |   |  ├── AddTodo.tsx
+    |   |  └── TodoItem.tsx
+    |   ├── API.ts
+    |   ├── App.tsx
+    |   ├── App.test.tsx
+    |   ├── index.css
+    |   ├── index.tsx
+    |   ├── react-app-env.d.ts
+    |   ├── setupTests.ts
+    |   └── type.d.ts
+    ├── tsconfig.json
+    ├── package.json
+    └── yarn.lock
+├── server
+```
+
+![client structure](./img_screenshot08.png)
