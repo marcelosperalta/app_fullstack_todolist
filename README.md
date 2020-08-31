@@ -243,7 +243,7 @@ const deleteTodo = async (req: Request, res: Response): Promise<void> => {
 export { getTodos, addTodo, updateTodo, deleteTodo }
 ```
 
-### :hash::zero::four:: Create API routes
+### :hash::zero::four: Create API routes
 
 :open_file_folder: [src/routes/index.ts](https://github.com/marcelosperalta/todoApp_react/blob/master/src/routes/index.ts)
 
@@ -264,7 +264,7 @@ router.delete("/delete-todo/:id", deleteTodo)
 export default router
 ```
 
-### :hash::zero::five:: Create a Server  
+### :hash::zero::five: Create a Server  
 
 :page_with_curl: Create a ```nodemon.json``` file to hold the MongoDB credentials.
 
@@ -287,3 +287,19 @@ export default router
 :page_with_curl: Create a ```app.ts``` file.
 
 :open_file_folder: [src/app.ts](https://github.com/marcelosperalta/todoApp_react/blob/master/src/app.ts)
+
+### :hash::zero::six: Client-side with React and TypeScript
+
+#### ⚙ Setting up
+
+:black_small_square: Create a new [React App](https://reactjs.org/docs/create-a-new-react-app.html) adding [TypeScript](https://create-react-app.dev/docs/adding-typescript/)
+
+```
+npx create-react-app my-app --template typescript
+```
+
+:black_small_square: Install the [Axios](https://github.com/axios/axios#axios) library to be able to fetch remote data.
+
+```
+
+```
