@@ -342,3 +342,29 @@ yarn add axios
 ```
 
 ![client structure](./img_screenshot08.png)
+
+### :hash::zero::one: Create a Todo Type
+
+:open_file_folder: [client/src/type.d.ts](https://github.com/marcelosperalta/todoApp_react/blob/master/server/src/types/todo.ts)
+
+```
+interface ITodo {
+  _id: string
+  name: string
+  description: string
+  status: boolean
+  createdAt?: string
+  updatedAt?: string
+}
+
+interface TodoProps {
+  todo: ITodo
+}
+
+type ApiDataType = {
+  message: string
+  status: string
+  todos: ITodo[]
+  todo?: ITodo
+}
+```
