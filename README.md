@@ -279,3 +279,5 @@ export default router
 ```
 
 :rotating_light: add the ```nodemon.json``` to your [.gitignore](https://git-scm.com/docs/gitignore) file to protect your DB access data.
+
+![nodemon.json](./readme/screenshot05.png)
