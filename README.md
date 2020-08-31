@@ -92,3 +92,21 @@ yarn add -D @types/node @types/express @types/mongoose @types/cors
 ```
 
 ![package.json](./readme/screenshot03.png)
+
+### :dvd: Install the dependencies [Concurrently](https://github.com/kimmobrunfeldt/concurrently#readme), and [nodemon](https://nodemon.io/)  
+
+
+```
+  yarn add -D concurrently nodemon
+```
+
+:heavy_exclamation_mark: update the package.json
+
+```
+"scripts": {
+  "build": "tsc",
+  "start": "concurrently \"tsc -w\" \"nodemon dist/js/app.js\""
+}
+```
+
+![package.json](./readme/screenshot04.png)

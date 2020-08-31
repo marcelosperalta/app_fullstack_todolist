@@ -5,6 +5,10 @@
   "repository": "https://github.com/marcelosperalta/todoApp_react",
   "author": "marcelosperalta <marcelosperalta@gmail.com>",
   "license": "MIT",
+  "scripts": {
+    "build": "tsc",
+    "start": "concurrently \"tsc -w\" \"nodemon dist/js/app.js\""
+  },
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^4.17.1",
@@ -15,6 +19,8 @@
     "@types/cors": "^2.8.7",
     "@types/express": "^4.17.7",
     "@types/mongoose": "^5.7.36",
-    "@types/node": "^14.6.2"
+    "@types/node": "^14.6.2",
+    "concurrently": "^5.3.0",
+    "nodemon": "^2.0.4"
   }
 }
