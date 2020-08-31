@@ -115,7 +115,7 @@ yarn add -D concurrently nodemon
 
 ![package.json](./readme/screenshot04.png)
 
-### :fire: :hash::zero::one: Create a Todo Type
+### :hash::zero::one: Create a Todo Type
 
 :open_file_folder: [src/types/todo.ts](https://github.com/marcelosperalta/todoApp_react/blob/master/src/types/todo.ts)
 
@@ -129,4 +129,4 @@ export interface ITodo extends Document {
 }
 ```
 
-### :fire: :hash::zero::two:
+### :hash::zero::two:
