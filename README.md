@@ -71,3 +71,14 @@ Delete the tsconfig.json's original settings and paste the text below:
 
 ![tsconfig.json](./readme/screenshot02.png)
 
+### :dvd: Install the dependencies to enable [TypeScript](https://www.typescriptlang.org/)  
+
+```
+yarn add typescript -g
+```
+
+### :dvd: Install the dependencies [Express](https://expressjs.com/), [CORS](https://github.com/expressjs/cors), and [Mongoose](https://mongoosejs.com/) to use Express and MongoDB  
+
+```
+yarn add express cors mongoose
+```
