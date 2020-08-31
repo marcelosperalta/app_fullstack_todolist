@@ -45,3 +45,21 @@ yarn init -y
 tsc --init
 ```
 
+Delete the tsconfig.json's original settings and paste the text below:
+
+```
+{
+  "compilerOptions": {
+    "target": "es6",
+    "module": "commonjs",
+    "outDir": "dist/js",
+    "rootDir": "src",
+    "strict": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true
+  },
+  "include": ["src/**/*"],
+  "exclude": ["src/types/*.ts", "node_modules", ".vscode"]
+}
+```
+
