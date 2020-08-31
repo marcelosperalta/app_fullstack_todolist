@@ -266,7 +266,7 @@ export default router
 
 ### :hash::zero::five:: Create a Server  
 
-Create a ```nodemon.json``` file to hold the MongoDB credentials.
+:page_with_curl: Create a ```nodemon.json``` file to hold the MongoDB credentials.
 
 ```
 {
@@ -281,3 +281,9 @@ Create a ```nodemon.json``` file to hold the MongoDB credentials.
 :rotating_light: add the ```nodemon.json``` to your [.gitignore](https://git-scm.com/docs/gitignore) file to protect your DB access data.
 
 ![nodemon.json](./readme/screenshot05.png)
+
+:loudspeaker: you can get the credentials by [MongoDB Atlas](https://www.mongodb.com/cloud/atlas)
+
+:page_with_curl: Create a ```app.ts``` file.
+
+:open_file_folder: [src/app.ts](https://github.com/marcelosperalta/todoApp_react/blob/master/src/app.ts)
