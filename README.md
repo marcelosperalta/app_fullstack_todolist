@@ -38,3 +38,10 @@ yarn init -y
 ├── package.json
 ├── tsconfig.json
 ```
+
+### ⚙ Configuring TypeScript with [tsconfig](https://www.typescriptlang.org/docs/handbook/tsconfig-json.html) using [tsc](https://www.typescriptlang.org/docs/handbook/release-notes/typescript-1-6.html#--init-command-line-option)
+
+```
+tsc --init
+```
+

@@ -1,3 +1,3 @@
 git add .
-git commit -m "typescript study"
+git commit -m "To-do App update"
 git push
