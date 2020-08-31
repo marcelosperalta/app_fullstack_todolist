@@ -129,4 +129,33 @@ export interface ITodo extends Document {
 }
 ```
 
-### :hash::zero::two:
+### :hash::zero::two:Create a Todo Model
+
+:open_file_folder: [src/models/todo.ts](https://github.com/marcelosperalta/todoApp_react/blob/master/src/models/todo.ts)
+
+```
+import { ITodo } from "./../types/todo"
+import { model, Schema } from "mongoose"
+
+const todoSchema: Schema = new Schema(
+  {
+    name: {
+      type: String,
+      required: true,
+    },
+
+    description: {
+      type: String,
+      required: true,
+    },
+
+    status: {
+      type: Boolean,
+      required: true,
+    },
+  },
+  { timestamps: true }
+)
+
+export default model<ITodo>("Todo", todoSchema)
+```
