@@ -42,7 +42,9 @@ yarn init -y
     ├── tsconfig.json
 ```
 
-![server structure](./img_screenshot02.png)
+![server structure](./img_screenshot02a.png)
+
+![server structure](./img_screenshot02b.png)
 
 ### ⚙ Configuring TypeScript with [tsconfig](https://www.typescriptlang.org/docs/handbook/tsconfig-json.html) using [tsc](https://www.typescriptlang.org/docs/handbook/release-notes/typescript-1-6.html#--init-command-line-option)
 
