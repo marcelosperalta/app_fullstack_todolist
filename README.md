@@ -297,8 +297,16 @@ export default router
 
 :black_small_square: Create a new [React App](https://reactjs.org/docs/create-a-new-react-app.html) adding [TypeScript](https://create-react-app.dev/docs/adding-typescript/)
 
+:rotating_light: the ```client``` folder needs to be at the same level of the ```server``` folder
+
 ```
-npx create-react-app my-app --template typescript
+npx create-react-app client --template typescript
+```
+
+:black_small_square: open the ```client``` folder
+
+```
+cd client
 ```
 
 :black_small_square: Install the [Axios](https://github.com/axios/axios#axios) library to be able to fetch remote data.
