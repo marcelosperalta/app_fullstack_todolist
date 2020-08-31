@@ -77,8 +77,17 @@ Delete the tsconfig.json's original settings and paste the text below:
 yarn add typescript -g
 ```
 
-### :dvd: Install the dependencies [Express](https://expressjs.com/), [CORS](https://github.com/expressjs/cors), and [Mongoose](https://mongoosejs.com/) to use Express and MongoDB  
+### :dvd: Install the dependencies [Express](https://expressjs.com/), [CORS](https://github.com/expressjs/cors), and [Mongoose](https://mongoosejs.com/) to use [Express](https://expressjs.com/) and [MongoDB](https://www.mongodb.com/)  
 
 ```
 yarn add express cors mongoose
 ```
+
+:heavy_exclamation_mark: install their types as development dependencies to help the TypeScript compiler understand the packages.
+
+:loudspeaker: see type declarations
+
+```
+yarn add -D @types/node @types/express @types/mongoose @types/cors
+```
+

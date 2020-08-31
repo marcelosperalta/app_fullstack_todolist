@@ -6,6 +6,9 @@
   "author": "marcelosperalta <marcelosperalta@gmail.com>",
   "license": "MIT",
   "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "mongoose": "^5.10.2",
     "typescript": "^4.0.2"
   }
 }
