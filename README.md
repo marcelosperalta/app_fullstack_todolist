@@ -98,6 +98,8 @@ yarn add -D @types/node @types/express @types/mongoose @types/cors
 ### :dvd: Install the dependencies [Concurrently](https://github.com/kimmobrunfeldt/concurrently#readme), and [nodemon](https://nodemon.io/)  
 
 
+[Concurrently](https://github.com/kimmobrunfeldt/concurrently#readme) will help compile the TypeScript code, keep watching for changes, and also start the server simultaneously.
+
 ```
 yarn add -D concurrently nodemon
 ```
@@ -112,3 +114,8 @@ yarn add -D concurrently nodemon
 ```
 
 ![package.json](./readme/screenshot04.png)
+
+### :fire: :hash::zero::one:
+
+
+### :fire: :hash::zero::two:
