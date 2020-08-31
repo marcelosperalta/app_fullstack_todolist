@@ -63,7 +63,7 @@ Delete the tsconfig.json's original settings and paste the text below:
 }
 ```
 
-:black_small_square: ``` outDir:``` tells the compiler to put the compiled code into the dist/js folder.  
+:black_small_square: ```/outDir:``` tells the compiler to put the compiled code into the dist/js folder.  
 :black_small_square: ```rootDir:``` informs TypeScript to compile every .ts file located in the src folder.  
 
 :black_small_square: ```include:``` tells the compiler to include files that are in the src directory and sub-directory.  
