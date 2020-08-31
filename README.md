@@ -297,13 +297,15 @@ export default router
 
 :black_small_square: Create a new [React App](https://reactjs.org/docs/create-a-new-react-app.html) adding [TypeScript](https://create-react-app.dev/docs/adding-typescript/)
 
-:rotating_light: the ```client``` folder needs to be at the same level of the ```server``` folder
+:rotating_light: the ```client``` folder needs to be at the same level of the ```server``` folder.
+
+![nodemon.json](./img_screenshot07.png)
 
 ```
 npx create-react-app client --template typescript
 ```
 
-:black_small_square: open the ```client``` folder
+:black_small_square: open the ```client``` folder.
 
 ```
 cd client
