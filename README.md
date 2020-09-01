@@ -10,9 +10,17 @@ A To-do App with [MongoDB](https://www.mongodb.com/), [Express](https://expressj
 <br>
 <br>
 
+**_app_**
+
 ![to-do app](./img_screenshot01.png)
 
+**_MongoDB Compass Community_**
+
 ![to-do app db](./img_screenshot01b.png)
+
+**_MongoDB Atlas_**
+
+![to-do app db](./img_screenshot01c.png)
 
 ## :star: Source
 
@@ -643,3 +651,16 @@ const App: React.FC = () => {
 export default App
 ```
 
+## :rocket: Run the Project
+
+### :cloud: Server-side
+
+```
+yarn start
+```
+
+### :computer: Client-side
+
+```
+yarn start
+```
