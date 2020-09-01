@@ -1,66 +1,93 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap'); */
+
+/* variables */
+:root {
+    --color-background: #C6FCFF;
+    --color-background-todo: #CEA2FD;
+    --color-background-button: #ffffff;
+    --color-font-primary: blue;
+    --color-font-secondary: #ffffff;
+}
+
+@font-face {
+  font-family:  "Architects";
+  src: url(./fonts/ArchitectsDaughter-Regular.ttf);
+}
 
 * {
+    font-family: "Architects", sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    border-radius: 8px;
 }
+
 body {
-    font-family: 'Nunito', sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    color: #fff;
-    background: #333;
+    color: var(--color-font-primary);
+    background: var(--color-background);
+    font-size: 1.2rem;
 }
 
 .App {
     max-width: 728px;
     margin: 4rem auto;
+    color: var(--color-font-primary);
 }
 
 .App > h1 {
     text-align: center;
     margin: 1rem 0;
+    font-size: 3rem;
 }
 
 .Card {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: #444;
+    background: var(--color-background-button);
     padding: 0.5rem 1rem;
     border-bottom: 1px solid #333333;
 }
 
 .Card--text h1 {
-    color: #ff9900;
+    color: var(--color-font-primary);
+    font-size: 2rem;
 }
 
 .Card--button button {
-    background: #f5f6f7;
+    background: var(--color-background-button);
     padding: 0.4rem 1rem;
-    border-radius: 20px;
     cursor: pointer;
 }
 
 .Card--button__delete {
     border: 1px solid #ca0000;
     color: #ca0000;
+    font-size: 1rem;
 }
 
 .Card--button__done {
     border: 1px solid #00aa69;
     color: #00aa69;
     margin-right: 1rem;
+    font-size: 1rem;
 }
 
+/* To-do, Description, Add */
 .Form {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1rem;
-    background: #444;
+    background: var(--color-background-button);
     margin-bottom: 1rem;
+    border-bottom: 1px solid #333333;
+}
+
+.Form div+div input {
+    width: 150%;
 }
 
 .Form > div {
@@ -70,29 +97,26 @@ body {
 }
 
 .Form input {
-    background: #f5f6f7;
+    background: var(--color-background-button);
     padding: 0.5rem 1rem;
-    border: 1px solid #ff9900;
-    border-radius: 10px;
+    border: 1px solid blue;
     display: block;
     margin: 0.3rem 1rem 0 0;
-}
-
-.Form label {
+    font-size: 1rem;
 }
 
 .Form button {
-    background: #ff9900;
-    color: #fff;
+    background: var(--color-background-button);
+    border: 1px solid blue;
+    color: blue;
     padding: 0.5rem 1rem;
-    border-radius: 20px;
     cursor: pointer;
-    border: none;
+    font-size: 1rem;
 }
 
 .line-through {
     text-decoration: line-through;
-    color: #777 !important;
+    color: #777;
 }
 
 .hide-button {
