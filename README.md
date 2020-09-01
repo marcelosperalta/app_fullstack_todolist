@@ -10,7 +10,7 @@ A To-do App with [MongoDB](https://www.mongodb.com/), [Express](https://expressj
 <br>
 <br>
 
-**_app_**
+**_App_**
 
 ![to-do app](./img_screenshot01.png)
 
