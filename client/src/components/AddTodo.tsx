@@ -1,34 +1,34 @@
-import React from "react"
+import React, { useState } from 'react'
 
-type Props = TodoProps & {
-  updateTodo: (todo: ITodo) => void
-  deleteTodo: (_id: string) => void
+type Props = { 
+  saveTodo: (e: React.FormEvent, formData: ITodo | any) => void 
 }
 
-const Todo: React.FC<Props> = ({ todo, updateTodo, deleteTodo }) => {
-  const checkTodo: string = todo.status ? `line-through` : ""
+const AddTodo: React.FC<Props> = ({ saveTodo }) => {
+  const [formData, setFormData] = useState<ITodo | {}>()
+
+  const handleForm = (e: React.FormEvent<HTMLInputElement>): void => {
+    setFormData({
+      ...formData,
+      [e.currentTarget.id]: e.currentTarget.value,
+    })
+  }
+
   return (
-    <div className="Card">
-      <div className="Card--text">
-        <h1 className={checkTodo}>{todo.name}</h1>
-        <span className={checkTodo}>{todo.description}</span>
+    <form className='Form' onSubmit={(e) => saveTodo(e, formData)}>
+      <div>
+        <div>
+          <label htmlFor='name'>Name</label>
+          <input onChange={handleForm} type='text' id='name' />
+        </div>
+        <div>
+          <label htmlFor='description'>Description</label>
+          <input onChange={handleForm} type='text' id='description' />
+        </div>
       </div>
-      <div className="Card--button">
-        <button
-          onClick={() => updateTodo(todo)}
-          className={todo.status ? `hide-button` : "Card--button__done"}
-        >
-          Complete
-        </button>
-        <button
-          onClick={() => deleteTodo(todo._id)}
-          className="Card--button__delete"
-        >
-          Delete
-        </button>
-      </div>
-    </div>
+      <button disabled={formData === undefined ? true: false} >Add Todo</button>
+    </form>
   )
 }
 
-export default Todo
+export default AddTodo
