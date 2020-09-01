@@ -12,7 +12,7 @@ A To-do App with [MongoDB](https://www.mongodb.com/), [Express](https://expressj
 
 **_App_**
 
-![to-do app](./img_screenshot01.png)
+![to-do app](./img_screenshot01a.png)
 
 **_MongoDB Compass Community_**
 
