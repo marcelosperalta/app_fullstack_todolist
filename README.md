@@ -292,7 +292,17 @@ yarn add axios
 
 ## :rocket: Run the Project
 
+### Git clone
+
+```
+git clone https://github.com/marcelosperalta/todoApp_react
+```
+
 ### :cloud: Server-side
+
+```
+cd server
+```
 
 ```
 yarn install
@@ -303,6 +313,10 @@ yarn start
 ```
 
 ### :computer: Client-side
+
+```
+cd client
+```
 
 ```
 yarn install
