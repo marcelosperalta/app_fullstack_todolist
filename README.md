@@ -326,16 +326,25 @@ New-Item nodemon.json
 }
 ```
 
+![client structure](./img_screenshot10.png)
+
 :black_small_square: **_Install the project dependencies based on the ```package.json```_**
 
 ```
 yarn install
 ```
+
+![client structure](./img_screenshot11.png)
+
 :black_small_square: **_Run the project based on the ```package.json``` start script_**
 
 ```
 yarn start
 ```
+
+:rotating_light: If you found some error during the first start, stop the app (crtl + c) and try to run again.
+
+![client structure](./img_screenshot12.png)
 
 ### :computer: Client-side
 
