@@ -298,6 +298,8 @@ yarn add axios
 git clone https://github.com/marcelosperalta/todoApp_react
 ```
 
+![client structure](./img_screenshot09.png)
+
 ### :cloud: Server-side
 
 ```
