@@ -302,13 +302,36 @@ git clone https://github.com/marcelosperalta/todoApp_react
 
 ### :cloud: Server-side
 
+:black_small_square: **_open ```server``` folder_**
+
 ```
 cd server
 ```
 
+:black_small_square: **_Create ```nodemon.json``` file_** _(e.g. using PowerShell)_
+
+```
+New-Item nodemon.json
+```
+
+:black_small_square: **_Fill the ```nodemon.json``` file with MongoDB credentials_**
+
+```
+{
+    "env": {
+        "MONGO_USER": "your-username",
+        "MONGO_PASSWORD": "your-password",
+        "MONGO_DB": "your-db-name"
+    }
+}
+```
+
+:black_small_square: **_Install the project dependencies based on the ```package.json```_**
+
 ```
 yarn install
 ```
+:black_small_square: **_Run the project based on the ```package.json``` start script_**
 
 ```
 yarn start
