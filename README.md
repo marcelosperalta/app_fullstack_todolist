@@ -292,7 +292,7 @@ yarn add axios
 
 ## :rocket: Run the Project
 
-### Git clone
+### :octocat: Git clone
 
 ```
 git clone https://github.com/marcelosperalta/todoApp_react
