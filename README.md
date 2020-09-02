@@ -28,7 +28,7 @@ A To-do App with [MongoDB](https://www.mongodb.com/), [Express](https://expressj
 <br>
 <br>
 
-## :cloud: Getting Started **Server-side**      :open_file_folder:[server](https://github.com/marcelosperalta/todoApp_react/blob/master/server/)
+## :cloud: Getting Started **Server-side**      [:open_file_folder:server](https://github.com/marcelosperalta/todoApp_react/blob/master/server/)
 
 ### :dvd: Generate the ```tsconfig.json```
 
