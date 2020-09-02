@@ -270,97 +270,9 @@ yarn add axios
 
 :open_file_folder: [client/src/type.d.ts](https://github.com/marcelosperalta/todoApp_react/blob/master/client/src/type.d.ts)
 
-```
-interface ITodo {
-  _id: string
-  name: string
-  description: string
-  status: boolean
-  createdAt?: string
-  updatedAt?: string
-}
-
-interface TodoProps {
-  todo: ITodo
-}
-
-type ApiDataType = {
-  message: string
-  status: string
-  todos: ITodo[]
-  todo?: ITodo
-}
-```
-
 ### :hash::zero::two: Fetch data from the API
 
 :open_file_folder: [client/src/API.ts](https://github.com/marcelosperalta/todoApp_react/blob/master/client/src/API.ts)
-
-```
-import axios, { AxiosResponse } from "axios"
-
-const baseUrl: string = "http://localhost:4000"
-
-export const getTodos = async (): Promise<AxiosResponse<ApiDataType>> => {
-  try {
-    const todos: AxiosResponse<ApiDataType> = await axios.get(
-      baseUrl + "/todos"
-    )
-    return todos
-  } catch (error) {
-    throw new Error(error)
-  }
-}
-
-export const addTodo = async (
-  formData: ITodo
-): Promise<AxiosResponse<ApiDataType>> => {
-  try {
-    const todo: Omit<ITodo, "_id"> = {
-      name: formData.name,
-      description: formData.description,
-      status: false,
-    }
-    const saveTodo: AxiosResponse<ApiDataType> = await axios.post(
-      baseUrl + "/add-todo",
-      todo
-    )
-    return saveTodo
-  } catch (error) {
-    throw new Error(error)
-  }
-}
-
-export const updateTodo = async (
-  todo: ITodo
-): Promise<AxiosResponse<ApiDataType>> => {
-  try {
-    const todoUpdate: Pick<ITodo, "status"> = {
-      status: true,
-    }
-    const updatedTodo: AxiosResponse<ApiDataType> = await axios.put(
-      `${baseUrl}/edit-todo/${todo._id}`,
-      todoUpdate
-    )
-    return updatedTodo
-  } catch (error) {
-    throw new Error(error)
-  }
-}
-
-export const deleteTodo = async (
-  _id: string
-): Promise<AxiosResponse<ApiDataType>> => {
-  try {
-    const deletedTodo: AxiosResponse<ApiDataType> = await axios.delete(
-      `${baseUrl}/delete-todo/${_id}`
-    )
-    return deletedTodo
-  } catch (error) {
-    throw new Error(error)
-  }
-}
-```
 
 ### **_Create the components_**
 
@@ -368,163 +280,21 @@ export const deleteTodo = async (
 
 :open_file_folder: [client/src/components/AddTodo.tsx](https://github.com/marcelosperalta/todoApp_react/blob/master/client/src/components/AddTodo.tsx)
 
-```
-import React from "react"
-
-type Props = TodoProps & {
-  updateTodo: (todo: ITodo) => void
-  deleteTodo: (_id: string) => void
-}
-
-const Todo: React.FC<Props> = ({ todo, updateTodo, deleteTodo }) => {
-  const checkTodo: string = todo.status ? `line-through` : ""
-  return (
-    <div className="Card">
-      <div className="Card--text">
-        <h1 className={checkTodo}>{todo.name}</h1>
-        <span className={checkTodo}>{todo.description}</span>
-      </div>
-      <div className="Card--button">
-        <button
-          onClick={() => updateTodo(todo)}
-          className={todo.status ? `hide-button` : "Card--button__done"}
-        >
-          Complete
-        </button>
-        <button
-          onClick={() => deleteTodo(todo._id)}
-          className="Card--button__delete"
-        >
-          Delete
-        </button>
-      </div>
-    </div>
-  )
-}
-
-export default Todo
-```
-
 ### :hash::zero::four: Display a Todo
 
 :open_file_folder: [client/src/components/TodoItem.tsx](https://github.com/marcelosperalta/todoApp_react/blob/master/client/src/components/TodoItem.tsx)
-
-```
-import React from "react"
-
-type Props = TodoProps & {
-  updateTodo: (todo: ITodo) => void
-  deleteTodo: (_id: string) => void
-}
-
-const Todo: React.FC<Props> = ({ todo, updateTodo, deleteTodo }) => {
-  const checkTodo: string = todo.status ? `line-through` : ""
-  return (
-    <div className="Card">
-      <div className="Card--text">
-        <h1 className={checkTodo}>{todo.name}</h1>
-        <span className={checkTodo}>{todo.description}</span>
-      </div>
-      <div className="Card--button">
-        <button
-          onClick={() => updateTodo(todo)}
-          className={todo.status ? `hide-button` : "Card--button__done"}
-        >
-          Complete
-        </button>
-        <button
-          onClick={() => deleteTodo(todo._id)}
-          className="Card--button__delete"
-        >
-          Delete
-        </button>
-      </div>
-    </div>
-  )
-}
-
-export default Todo
-```
 
 ### :hash::zero::five: Fetch and Display data
 
 :open_file_folder: [client/src/App.tsx](https://github.com/marcelosperalta/todoApp_react/blob/master/client/src/components/TodoItem.tsx)
 
-```
-import React, { useEffect, useState } from 'react'
-import TodoItem from './components/TodoItem'
-import AddTodo from './components/AddTodo'
-import { getTodos, addTodo, updateTodo, deleteTodo } from './API'
-
-const App: React.FC = () => {
-  const [todos, setTodos] = useState<ITodo[]>([])
-
-  useEffect(() => {
-    fetchTodos()
-  }, [])
-
-  const fetchTodos = (): void => {
-    getTodos()
-    .then(({ data: { todos } }: ITodo[] | any) => setTodos(todos))
-    .catch((err: Error) => console.log(err))
-  }
-
-  const handleSaveTodo = (e: React.FormEvent, formData: ITodo): void => {
-  e.preventDefault()
-  addTodo(formData)
-    .then(({ status, data }) => {
-      if (status !== 201) {
-        throw new Error("Error! Todo not saved")
-      }
-      setTodos(data.todos)
-    })
-    .catch(err => console.log(err))
-  }
-
-  const handleUpdateTodo = (todo: ITodo): void => {
-  updateTodo(todo)
-    .then(({ status, data }) => {
-      if (status !== 200) {
-        throw new Error("Error! Todo not updated")
-      }
-      setTodos(data.todos)
-    })
-    .catch(err => console.log(err))
-  }
-
-  const handleDeleteTodo = (_id: string): void => {
-  deleteTodo(_id)
-    .then(({ status, data }) => {
-      if (status !== 200) {
-        throw new Error("Error! Todo not deleted")
-      }
-      setTodos(data.todos)
-    })
-    .catch(err => console.log(err))
-  }
-
-  return (
-    <main className='App'>
-      <h1>My Todos</h1>
-      <AddTodo saveTodo={handleSaveTodo} />
-      {todos.map((todo: ITodo) => (
-        <TodoItem
-          key={todo._id}
-          updateTodo={handleUpdateTodo}
-          deleteTodo={handleDeleteTodo}
-          todo={todo}
-        />
-      ))}
-    </main>
-  )
-}
-
-export default App
-```
-
 ## :rocket: Run the Project
 
 ### :cloud: Server-side
+
+```
+yarn install
+```
 
 ```
 yarn start
@@ -533,5 +303,12 @@ yarn start
 ### :computer: Client-side
 
 ```
+yarn install
+```
+
+```
 yarn start
 ```
+
+### Screenshot
+
