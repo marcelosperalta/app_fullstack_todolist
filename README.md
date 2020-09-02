@@ -298,7 +298,7 @@ yarn add axios
 git clone https://github.com/marcelosperalta/todoApp_react
 ```
 
-![client structure](./img_screenshot09.png)
+![client](./img_screenshot09.png)
 
 ### :cloud: Server-side
 
@@ -326,7 +326,7 @@ New-Item nodemon.json
 }
 ```
 
-![client structure](./img_screenshot10.png)
+![client](./img_screenshot10.png)
 
 :black_small_square: **_Install the project dependencies based on the ```package.json```_**
 
@@ -334,7 +334,7 @@ New-Item nodemon.json
 yarn install
 ```
 
-![client structure](./img_screenshot11.png)
+![client](./img_screenshot11.png)
 
 :black_small_square: **_Run the project based on the ```package.json``` start script_**
 
@@ -342,23 +342,34 @@ yarn install
 yarn start
 ```
 
-:rotating_light: If you found some error during the first start, stop the app (crtl + c) and try to run again.
+:rotating_light: If you found some error during the first start, stop the app (ctrl + c) and try to run again.
 
-![client structure](./img_screenshot12.png)
+![client](./img_screenshot12.png)
 
 ### :computer: Client-side
+
+:black_small_square: **_open ```client``` folder_**
 
 ```
 cd client
 ```
 
+:black_small_square: **_Install the project dependencies based on the ```package.json```_**
+
 ```
 yarn install
 ```
+
+![client](./img_screenshot13.png)
+
+:black_small_square: **_Run the project based on the ```package.json``` start script_**
 
 ```
 yarn start
 ```
 
+![client](./project_start.gif)
+
 ### Screenshot
 
+![client](./img_screenshot14.png)
