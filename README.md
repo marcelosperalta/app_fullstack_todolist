@@ -10,6 +10,8 @@ A To-do App with [MongoDB](https://www.mongodb.com/), [Express](https://expressj
 <br>
 <br>
 
+[![Gitpod ready-to-code](https://img.shields.io/badge/Gitpod-ready--to--code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/marcelosperalta/todoApp_react)
+
 **_App_**
 
 ![to-do app](./img_screenshot01a.png)
