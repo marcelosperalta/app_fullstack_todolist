@@ -218,6 +218,8 @@ mongoose
 
 ## :computer: **Client-side** with React and TypeScript
 
+#### [:open_file_folder:client](https://github.com/marcelosperalta/todoApp_react/blob/master/client/)
+
 #### ⚙ Setting up
 
 :black_small_square: Create a new [React App](https://reactjs.org/docs/create-a-new-react-app.html) adding [TypeScript](https://create-react-app.dev/docs/adding-typescript/)
