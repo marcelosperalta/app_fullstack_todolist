@@ -174,7 +174,7 @@ yarn add -D concurrently nodemon
 
 :loudspeaker: you can get the credentials by [MongoDB Atlas](https://www.mongodb.com/cloud/atlas)
 
-:page_with_curl: Create a ```app.ts``` file.
+### :hash::zero::six: Create a ```app.ts``` file.
 
 :open_file_folder: [server/src/app.ts](https://github.com/marcelosperalta/todoApp_react/blob/master/server/src/app.ts)
 
