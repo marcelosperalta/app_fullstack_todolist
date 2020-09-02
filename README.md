@@ -278,8 +278,6 @@ yarn add axios
 
 :open_file_folder: [client/src/API.ts](https://github.com/marcelosperalta/todoApp_react/blob/master/client/src/API.ts)
 
-### **_Create the components_**
-
 ### :hash::zero::three: Add Todo Form
 
 :open_file_folder: [client/src/components/AddTodo.tsx](https://github.com/marcelosperalta/todoApp_react/blob/master/client/src/components/AddTodo.tsx)
