@@ -1,5 +1,5 @@
 <div align="center">
-<img height="200" src="./img_mern.png"/>
+<img height="200" src="./client/public/images/img_mern.png"/>
 &nbsp;&nbsp;&nbsp;&nbsp;
 <img height="200" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/typescript/typescript.png"/>
 </div>
@@ -14,15 +14,15 @@ A To-do App with [MongoDB](https://www.mongodb.com/), [Express](https://expressj
 
 **_App_**
 
-![to-do app](./img_screenshot01a.png)
+![to-do app](./client/public/images/img_screenshot01a.png)
 
 **_MongoDB Compass Community_**
 
-![to-do app db](./img_screenshot01b.png)
+![to-do app db](./client/public/images/img_screenshot01b.png)
 
 **_MongoDB Atlas_**
 
-![to-do app db](./img_screenshot01c.png)
+![to-do app db](./client/public/images/img_screenshot01c.png)
 
 ## :star: Source
 
@@ -62,7 +62,7 @@ yarn init -y
     ├── tsconfig.json
 ```
 
-![server structure](./img_screenshot02.png)
+![server structure](./client/public/images/img_screenshot02.png)
 
 ### ⚙ Configuring TypeScript with [tsconfig](https://www.typescriptlang.org/docs/handbook/tsconfig-json.html) using [tsc](https://www.typescriptlang.org/docs/handbook/release-notes/typescript-1-6.html#--init-command-line-option)
 
@@ -94,7 +94,7 @@ Delete the ```tsconfig.json``` original settings and paste the text below:
 :black_small_square: ```include:``` tells the compiler to include files that are in the src directory and sub-directory.  
 :black_small_square: ```exclude:``` will exclude the files or folders passed in the array during compile-time.  
 
-![tsconfig.json](./img_screenshot03.png)
+![tsconfig.json](./client/public/images/img_screenshot03.png)
 
 ### :dvd: Install the dependencies to enable [TypeScript](https://www.typescriptlang.org/)  
 
@@ -116,7 +116,7 @@ yarn add express cors mongoose
 yarn add -D @types/node @types/express @types/mongoose @types/cors
 ```
 
-![package.json](./img_screenshot04.png)
+![package.json](./client/public/images/img_screenshot04.png)
 
 ### :dvd: Install the dependencies [Concurrently](https://github.com/kimmobrunfeldt/concurrently#readme), and [nodemon](https://nodemon.io/)  
 
@@ -136,7 +136,7 @@ yarn add -D concurrently nodemon
 }
 ```
 
-![package.json](./img_screenshot05.png)
+![package.json](./client/public/images/img_screenshot05.png)
 
 ### :hash::zero::one: Create a Todo Type
 
@@ -172,7 +172,7 @@ yarn add -D concurrently nodemon
 
 :rotating_light: add the ```nodemon.json``` to your [.gitignore](https://git-scm.com/docs/gitignore) file to protect your DB access data.
 
-![nodemon.json](./img_screenshot06.png)
+![nodemon.json](./client/public/images/img_screenshot06.png)
 
 :loudspeaker: you can get the credentials by [MongoDB Atlas](https://www.mongodb.com/cloud/atlas)
 
@@ -228,7 +228,7 @@ mongoose
 
 :rotating_light: the ```client``` folder needs to be at the same level of the ```server``` folder.
 
-![client folder](./img_screenshot07.png)
+![client folder](./client/public/images/img_screenshot07.png)
 
 ```
 npx create-react-app client --template typescript
@@ -270,7 +270,7 @@ yarn add axios
 ├── server
 ```
 
-![client structure](./img_screenshot08.png)
+![client structure](./client/public/images/img_screenshot08.png)
 
 ### :hash::zero::one: Create a Todo Type
 
@@ -300,7 +300,7 @@ yarn add axios
 git clone https://github.com/marcelosperalta/todoApp_react
 ```
 
-![client](./img_screenshot09.png)
+![client](./client/public/images/img_screenshot09.png)
 
 ### :cloud: Server-side
 
@@ -328,7 +328,7 @@ New-Item nodemon.json
 }
 ```
 
-![client](./img_screenshot10.png)
+![client](./client/public/images/img_screenshot10.png)
 
 :black_small_square: **_Install the project dependencies based on the ```package.json```_**
 
@@ -336,7 +336,7 @@ New-Item nodemon.json
 yarn install
 ```
 
-![client](./img_screenshot11.png)
+![client](./client/public/images/img_screenshot11.png)
 
 :black_small_square: **_Run the project based on the ```package.json``` start script_**
 
@@ -346,7 +346,7 @@ yarn start
 
 :rotating_light: If you found some error during the first start, stop the app (ctrl + c) and try to run again.
 
-![client](./img_screenshot12.png)
+![client](./client/public/images/img_screenshot12.png)
 
 ### :computer: Client-side
 
@@ -362,7 +362,7 @@ cd client
 yarn install
 ```
 
-![client](./img_screenshot13.png)
+![client](./client/public/images/img_screenshot13.png)
 
 :black_small_square: **_Run the project based on the ```package.json``` start script_**
 
@@ -370,8 +370,8 @@ yarn install
 yarn start
 ```
 
-![client](./project_start.gif)
+![client](./client/public/images/project_start.gif)
 
-### Screenshot
+### :sunrise: Screenshot
 
-![client](./img_screenshot14.png)
+![client](./client/public/images/img_screenshot14.png)
