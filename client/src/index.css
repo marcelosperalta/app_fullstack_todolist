@@ -2,7 +2,7 @@
 
 /* variables */
 :root {
-    --color-background: #C6FCFF;
+    --color-background: linear-gradient(to right, #bbcad6, #84b0d1);
     --color-background-todo: #CEA2FD;
     --color-background-button: #ffffff;
     --color-font-primary: blue;
