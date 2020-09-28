@@ -1,0 +1,14 @@
+{
+  "name": "todoapp",
+  "repository": "https://github.com/marcelosperalta/todoApp_react",
+  "author": "marcelosperalta <marcelosperalta@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "server": "yarn --cwd ./server/ start",
+    "client": "yarn --cwd ./client/ start",
+    "start": "concurrently  \"yarn server\" \"yarn client\""
+  },
+  "devDependencies": {
+    "concurrently": "^5.3.0"
+  }
+}

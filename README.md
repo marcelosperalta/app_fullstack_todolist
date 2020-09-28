@@ -304,7 +304,7 @@ git clone https://github.com/marcelosperalta/todoApp_react
 
 ### :cloud: Server-side
 
-:black_small_square: **_open ```server``` folder_**
+:black_small_square: **_Open ```server``` folder_**
 
 ```
 cd server
@@ -350,7 +350,7 @@ yarn start
 
 ### :computer: Client-side
 
-:black_small_square: **_open ```client``` folder_**
+:black_small_square: **_Open ```client``` folder_**
 
 ```
 cd client
@@ -371,6 +371,66 @@ yarn start
 ```
 
 ![client](./client/public/images/project_start.gif)
+
+### to run :cloud: Server-side and :computer: Client-side simultaneously  
+
+:black_small_square: **_Open ```server``` folder_**
+
+```
+cd server
+```
+
+:black_small_square: **_Create ```nodemon.json``` file_** _(e.g. using PowerShell)_
+
+```
+New-Item nodemon.json
+```
+
+:black_small_square: **_Fill the ```nodemon.json``` file with MongoDB credentials_**
+
+```
+{
+    "env": {
+        "MONGO_USER": "your-username",
+        "MONGO_PASSWORD": "your-password",
+        "MONGO_DB": "your-db-name"
+    }
+}
+```
+
+![client](./client/public/images/img_screenshot10.png)
+
+:black_small_square: **_Install the project dependencies based on the ```package.json```_**
+
+```
+yarn install
+```
+
+:black_small_square: **_Open ```client``` folder_**
+
+```
+cd client
+```
+
+:black_small_square: **_Install the project dependencies based on the ```package.json```_**
+
+```
+yarn install
+```
+
+![client](./client/public/images/img_screenshot13.png)
+
+:black_small_square: **_Return to the root folder of the project and install the dependencies based on the ```package.json```_**
+
+```
+yarn install
+```
+
+:black_small_square: **_Run the project based on the ```package.json``` start script_**
+
+```
+yarn start
+```
 
 ### :sunrise: Screenshot
 
