@@ -372,7 +372,7 @@ yarn start
 
 ![client](./client/public/images/project_start.gif)
 
-### to run :cloud: Server-side and :computer: Client-side simultaneously  
+### :runner: Run :cloud: Server-side and :computer: Client-side simultaneously  
 
 :black_small_square: **_Open ```server``` folder_**
 
