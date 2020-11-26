@@ -14,7 +14,7 @@ A To-do App with [MongoDB](https://www.mongodb.com/), [Express](https://expressj
 
 **_App_**
 
-![to-do app](./client/public/images/img_screenshot01a.png)
+![to-do list](./client/public/images/img_screenshot01a.png)
 
 **_MongoDB Compass Community_**
 
@@ -431,7 +431,3 @@ yarn install
 ```
 yarn start
 ```
-
-### :sunrise: Screenshot
-
-![client](./client/public/images/img_screenshot14.png)
